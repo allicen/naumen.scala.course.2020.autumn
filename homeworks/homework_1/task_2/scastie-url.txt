@@ -1,0 +1,24 @@
+val firstName = "Elena"
+val secondName = "Rubleva"
+var firstNameReverse = firstName.reverse
+var secondNameReverse = secondName.reverse
+
+var hello = "Hello Scala! This is $firstName"
+printLine(hello)
+
+var resReplace = hello.replace("Hello", "Hola")
+printLine(resReplace)
+
+var resReplaceTwo = hello.replace("Hello", "Privet")
+printLine(resReplaceTwo)
+
+
+val firstLine = resReplace.replace("Elena", firstNameReverse) + secondNameReverse
+printLine(firstLine)
+
+val secondLine = resReplaceTwo.replace("Elena", firstNameReverse) + " " + secondNameReverse
+printLine(secondLine)
+
+def printLine(line: String) {
+  print(line)
+}

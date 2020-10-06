@@ -1,0 +1,44 @@
+Microsoft Windows [Version 10.0.17763.1282]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2018. Все права защищены.
+
+C:\Users\User>scala -version
+Scala code runner version 2.12.10 -- Copyright 2002-2019, LAMP/EPFL and Lightbend, Inc.
+
+C:\Users\User>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 11.0.6).
+Type in expressions for evaluation. Or try :help.
+
+scala> print("Hello Scala! This is Elena")
+Hello Scala! This is Elena
+
+scala> var hello = "Hello Scala! This is Elena"
+hello: String = Hello Scala! This is Elena
+
+scala> var resReplace = hello.replace("Hello", "Hola")
+resReplace: String = Hola Scala! This is Elena
+
+scala> print(resReplace)
+Hola Scala! This is Elena
+scala> var resReplaceTwo = hello.replace("Hello", "Privet")
+resReplaceTwo: String = Privet Scala! This is Elena
+
+scala> print(resReplaceTwo)
+Privet Scala! This is Elena
+scala> var firstName = "Elena"
+firstName: String = Elena
+
+scala> var secondName = "Rubleva"
+secondName: String = Rubleva
+
+scala> var firstNameReverse = firstName.reverse
+firstNameReverse: String = anelE
+
+scala> var secondNameReverse = secondName.reverse
+secondNameReverse: String = avelbuR
+
+scala> print(resReplace.replace("Elena", firstNameReverse) + secondNameReverse)
+Hola Scala! This is anelEavelbuR
+scala> print(resReplace.replace("Elena", firstNameReverse) + " " + secondNameReverse)
+Hola Scala! This is anelE avelbuR
+scala> print(resReplaceTwo.replace("Elena", firstNameReverse) + " " + secondNameReverse)
+Privet Scala! This is anelE avelbuR
