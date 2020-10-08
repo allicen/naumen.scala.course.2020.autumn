@@ -1,6 +1,6 @@
 import scala.collection.immutable.ListMap
 
-object Exercises extends App {
+object Exercises {
 
     /*ПРИМЕР*/
     /*Реализовать функцию, которая возвращает все целые числа в заданном диапазоне (от iForm до iTo), которые делятся
