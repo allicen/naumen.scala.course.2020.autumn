@@ -1,6 +1,6 @@
 import scala.collection.immutable.ListMap
 
-object Exercises {
+object Exercises extends App {
 
     /*ПРИМЕР*/
     /*Реализовать функцию, которая возвращает все целые числа в заданном диапазоне (от iForm до iTo), которые делятся
@@ -13,7 +13,6 @@ object Exercises {
     }
 
 
-
     /*ЗАДАНИЕ I*/
     /*Реализовать функцию, которая возвращает сумму всех целых чисел в заданном диапазоне (от iForm до iTo), которые делятся
     на 3 или на 5.*/
@@ -21,13 +20,10 @@ object Exercises {
     def sumOfDivBy3Or5(iFrom: Int, iTo: Int): Long = {
         var sum: Long = 0
         for { number: Int <- iFrom to iTo
-            if (number % 3 == 0 || number % 5 == 0)
+            if number % 3 == 0 || number % 5 == 0
         } sum += number
         sum
     }
-
-    println(sumOfDivBy3Or5(1, 10))
-
 
 
     /*ЗАДАНИЕ II*/
@@ -49,9 +45,6 @@ object Exercises {
         }
         divideNumber(number, 2).distinct
     }
-
-    println(primeFactor(80))
-
 
 
     /*ЗАДАНИЕ III*/
@@ -76,7 +69,6 @@ object Exercises {
 
     def sumCosines(leftVec0: Vector2D, leftVec1: Vector2D, rightVec0: Vector2D, rightVec1: Vector2D): Double =
         sumByFunc(leftVec0, leftVec1, cosBetween, rightVec0, rightVec1)
-
 
 
     /*ЗАДАНИЕ IV*/
@@ -104,8 +96,5 @@ object Exercises {
         }
         ListMap(weight.toSeq.sortWith(_._2 > _._2):_*).keys.toSeq
     }
-
-    println(sortByHeavyweight())
-
 }
 
