@@ -20,8 +20,8 @@ object Test extends TestSuite{
     }
 
     'morse - {
-      assert(Exercises.morse("SOS") == "... --- ...")
-      assert(Exercises.morse("Hello world!") == ".... . .-.. .-.. ---   .-- --- .-. .-.. -..!")
+      assert(Exercises.morse("SOS") == "... --- ... ")
+      assert(Exercises.morse("Hello world!") == ".... . .-.. .-.. ---  .-- --- .-. .-.. -.. !")
     }
 
     'wordReverse - {
