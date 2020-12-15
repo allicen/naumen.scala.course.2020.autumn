@@ -1,4 +1,4 @@
-object Exercises extends App {
+object Exercises {
 
 
   def reverse[T](seq: Seq[T]): Seq[T] = if (seq.nonEmpty) reverse(seq.tail) :+ seq.head
